@@ -1,1 +1,1 @@
-vless://81d7ffa3-279f-4d02-801c-e44c33e79802@voltra.click:443?security=reality&encryption=none&pbk=nskeUULR56XXPfdiyKOv_LVWZ1HmU8jAS402tyr1RSM&headerType=none&fp=chrome&spx=%2F&type=tcp&sni=www.cloudflare.com&sid=6a4e4d5b4c0f0120#Voltra
+vless://81d7ffa3-279f-4d02-801c-e44c33e79802@voltra.click:443?security=reality&encryption=none&pbk=nskeUULR56XXPfdiyKOv_LVWZ1HmU8jAS402tyr1RSM&headerType=none&fp=chrome&spx=%2F&type=tcp&sni=www.cloudflare.com&sid=6a4e4d5b4c0f0120#Voltr
