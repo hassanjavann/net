@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voltra VPN - Copy VLESS Config</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background-color: #f2f2f2;
+    }
+    button {
+      background-color: #0055e3;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #003ba0;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="copyBtn">Import Config To Clipboard</button>
+
+  <script>
+    const button = document.getElementById("copyBtn");
+
+    button.addEventListener("click", async () => {
+      try {
+        const response = await fetch("https://raw.githubusercontent.com/voltravpn/voltravpn/main/vless.txt");
+        if (!response.ok) throw new Error("Network error");
+        const text = await response.text();
+        await navigator.clipboard.writeText(text);
+        button.textContent = "Imported";
+        setTimeout(() => button.textContent = "Import Config To Clipboard", 2000);
+      } catch (error) {
+        button.textContent = "Import Error";
+        setTimeout(() => button.textContent = "Import Config To Clipboard", 2000);
+      }
+    });
+  </script>
+
+</body>
+</html>
