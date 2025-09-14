@@ -1,1 +1,1 @@
-vless://3e7cd89c-af27-46ec-9fd9-ec91b82e6691@voltra.click:443?type=tcp&security=reality&pbk=nskeUULR56XXPfdiyKOv_LVWZ1HmU8jAS402tyr1RSM&fp=chrome&sni=www.cloudflare.com&sid=6a4e4d5b4c0f0120&spx=%2F#Voltra-JavanTv
+/
